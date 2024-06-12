@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Square Cropped Video Stream</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="big-canv">
+    <div class="canvas-wrapper">
+        <canvas id="left-canvas"></canvas>
+        <div class="canvas-label">Farthest Match</div>
+    </div>
+    <div id="canv-container">
+        <video id="video" autoplay></video>
+        <div class="canvas-wrapper">
+            <canvas id="user-canvas"></canvas>
+            <div class="canvas-label">Live</div>
+        </div>
+    </div>
+    <div class="canvas-wrapper">
+        <canvas id="right-canvas"></canvas>
+        <div class="canvas-label">Closest Match</div>
+    </div>
+</div>
+<div id="canvasGrid"></div>
+<script src="main/camera.js" type="module"></script>
+<script src="main/grid.js" type="module"></script>
+</body>
+</html>
